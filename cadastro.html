@@ -1,0 +1,61 @@
+<!doctype html>
+<fieldset>
+<legend>Endereço</legend>
+
+
+<label for="cep">CEP</label>
+<input id="cep" name="cep" type="text" inputmode="numeric" pattern="\d{5}-\d{3}" placeholder="00000-000" required>
+
+
+<label for="endereco">Endereço</label>
+<input id="endereco" name="endereco" type="text" required>
+
+
+<label for="cidade">Cidade</label>
+<input id="cidade" name="cidade" type="text" required>
+
+
+<label for="estado">Estado</label>
+<select id="estado" name="estado" required>
+<option value="">Selecione</option>
+<option value="SP">SP</option>
+<option value="RJ">RJ</option>
+<option value="MG">MG</option>
+<!-- adicionar outros estados conforme necessário -->
+</select>
+</fieldset>
+
+
+<fieldset>
+<legend>Perfil</legend>
+<label for="perfil">Sou:</label>
+<select id="perfil" name="perfil" required>
+<option value="">Selecione</option>
+<option value="voluntario">Voluntário</option>
+<option value="doador">Doador</option>
+<option value="visitante">Visitante</option>
+</select>
+
+
+<label for="mensagem">Mensagem / Áreas de interesse</label>
+<textarea id="mensagem" name="mensagem" rows="4"></textarea>
+</fieldset>
+
+
+<p>
+<button type="submit" class="btn">Enviar cadastro</button>
+</p>
+</form>
+</main>
+
+
+<footer class="site-footer" role="contentinfo">
+<div class="container">
+<p>&copy; ONG Exemplo</p>
+</div>
+</footer>
+
+
+<script src="js/scripts.js"></script>
+</body>
+</html>

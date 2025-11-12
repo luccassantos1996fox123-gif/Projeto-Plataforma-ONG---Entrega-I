@@ -1,0 +1,45 @@
+/* Mobile-first e acessível */
+:root{
+--max-w:1100px;
+--gap:1rem;
+--brand:#1565c0;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial}
+.container{max-width:var(--max-w);margin:0 auto;padding:1rem}
+.skip-link{position:absolute;left:-999px;top:auto;opacity:0;transition:all .2s}
+.skip-link:focus{left:1rem;top:1rem;opacity:1}
+.site-header{background:var(--brand);color:#fff;padding:.75rem 0}
+.brand{margin:0;font-size:1.25rem}
+.nav-list{list-style:none;padding:0;display:flex;gap:1rem;margin:0}
+.nav-list a{color:inherit;text-decoration:none}
+.hero{padding:1.5rem 0}
+.btn{display:inline-block;padding:.6rem 1rem;border-radius:6px;background:#fff;color:var(--brand);text-decoration:none}
+.highlights{display:flex;gap:1rem;flex-wrap:wrap;padding:0;list-style:none}
+.project-list{display:grid;grid-template-columns:1fr;gap:1rem}
+.project-card{border:1px solid #ddd;border-radius:8px;overflow:hidden}
+.project-card img{width:100%;height:auto;display:block}
+.card-content{padding:.75rem}
+.site-footer{background:#f4f4f4;padding:1rem;margin-top:2rem}
+label{display:block;margin-top:.5rem}
+input,select,textarea{width:100%;padding:.5rem;border:1px solid #ccc;border-radius:4px;margin-top:.25rem}
+.btn[type="submit"]{background:var(--brand);color:#fff;border:none}
+
+
+@media(min-width:700px){
+.project-list{grid-template-columns:repeat(2,1fr)}
+.nav-list{gap:2rem}
+}
+
+
+@media(min-width:1000px){
+.hero{display:flex;gap:2rem;align-items:center}
+}
+
+
+/* foco visível */
+:focus{outline:3px solid rgba(21,101,192,.25);outline-offset:2px}
+
+
+/* pequenas utilidades */
+.progress{color:var(--brand);font-weight:700}
